@@ -24,10 +24,10 @@
             <h1 class="text-xl font-bold mb-4 sm:mb-0">Speaking: The Daily Routine</h1>
             <nav class="flex flex-wrap gap-2 text-sm justify-center">
                 <button id="nav-1" onclick="showPhase(1)" class="nav-btn active-btn bg-orange-600 hover:bg-orange-500 px-3 py-2 rounded font-bold transition ring-2 ring-white opacity-100">1. Habits</button>
-                <button id="nav-2" onclick="showPhase(2)" class="nav-btn bg-orange-700 hover:bg-orange-600 px-3 py-2 rounded font-bold transition opacity-75">2. Questions</button>
+                <button id="nav-2" onclick="showPhase(2)" class="nav-btn bg-orange-700 hover:bg-orange-600 px-3 py-2 rounded font-bold transition opacity-75">2. DO / DOES</button>
                 <button id="nav-3" onclick="showPhase(3)" class="nav-btn bg-red-700 hover:bg-red-600 px-3 py-2 rounded font-bold transition opacity-75 border border-red-500">3. The S-Trap</button>
                 <button id="nav-4" onclick="showPhase(4)" class="nav-btn bg-orange-700 hover:bg-orange-600 px-3 py-2 rounded font-bold transition opacity-75 border border-orange-500">4. Profile</button>
-                <button id="nav-5" onclick="showPhase(5)" class="nav-btn bg-orange-700 hover:bg-orange-600 px-3 py-2 rounded font-bold transition opacity-75">5. The Mixer</button>
+                <button id="nav-5" onclick="showPhase(5)" class="nav-btn bg-orange-700 hover:bg-orange-600 px-3 py-2 rounded font-bold transition opacity-75">5. The Gossip</button>
                 <button id="nav-6" onclick="showPhase(6)" class="nav-btn bg-purple-700 hover:bg-purple-600 px-3 py-2 rounded font-bold transition opacity-75 border border-purple-500">6. Report</button>
             </nav>
         </div>
@@ -40,7 +40,7 @@
             <!-- PHASE 1: Vocabulary -->
             <div id="phase1" class="phase-section active-phase">
                 <h2 class="text-3xl font-bold text-orange-900 mb-2">Phase 1: Lifestyle Habits</h2>
-                <p class="text-gray-600 mb-6 text-lg">Goal: We don't talk about brushing our teeth. We talk about our lifestyle.</p>
+                <p class="text-gray-600 mb-6 text-lg">Goal: Learn how to describe daily schedules and lifestyles.</p>
                 
                 <div class="grid md:grid-cols-2 gap-6 mb-6">
                     <div class="bg-white p-5 rounded-lg border-t-8 border-orange-500 shadow-md text-center">
@@ -49,7 +49,7 @@
                             <li class="flex items-center gap-2 justify-center"><span class="text-2xl">💼</span> work at the office</li>
                             <li class="flex items-center gap-2 justify-center"><span class="text-2xl">🏃‍♂️</span> exercise at the gym</li>
                             <li class="flex items-center gap-2 justify-center"><span class="text-2xl">📚</span> study at the library</li>
-                            <li class="flex items-center gap-2 justify-center"><span class="text-2xl">☕</span> meet friends for coffee</li>
+                            <li class="flex items-center gap-2 justify-center"><span class="text-2xl">☕</span> meet friends</li>
                         </ul>
                     </div>
 
@@ -67,83 +67,56 @@
                 <div class="bg-orange-50 border-l-4 border-orange-500 p-4 rounded-lg shadow-sm">
                     <h4 class="font-bold text-orange-800 text-sm uppercase mb-2">The Time Rule (Use AT)</h4>
                     <p class="text-xl font-medium text-gray-800 italic">"I wake up <span class="font-bold text-orange-700 underline">at</span> 7:00 AM."</p>
-                    <p class="text-xl font-medium text-gray-800 italic mt-1">"I go to bed <span class="font-bold text-orange-700 underline">at</span> 11:30 PM."</p>
+                    <p class="text-xl font-medium text-gray-800 italic mt-1">"David goes to bed <span class="font-bold text-orange-700 underline">at</span> 11:30 PM."</p>
                 </div>
             </div>
 
-            <!-- PHASE 2: Questions (UPGRADED SCAFFOLDING) -->
+            <!-- PHASE 2: Questions (DO vs DOES) -->
             <div id="phase2" class="phase-section hidden-phase">
-                <h2 class="text-3xl font-bold text-slate-800 mb-6">Phase 2: Asking about Lifestyle</h2>
-                <p class="text-gray-600 mb-6 text-lg">Goal: Memorize these 4 questions. You will need them to interrogate your partner.</p>
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">Phase 2: DO vs. DOES</h2>
+                <p class="text-gray-600 mb-6 text-lg">Goal: To ask a question, you must check the subject. Is it one person, or many people?</p>
 
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-                    <!-- Wake up -->
-                    <div class="card-flip h-36" onclick="this.classList.toggle('flipped')">
-                        <div class="card-inner">
-                            <div class="card-front bg-yellow-100 flex items-center justify-center rounded-xl border-2 border-yellow-300 p-2 text-center shadow-sm">
-                                <p class="text-xl font-bold text-yellow-800">Wake Up</p>
-                            </div>
-                            <div class="card-back bg-yellow-600 text-white flex items-center justify-center rounded-xl p-2 text-center shadow-inner">
-                                <p class="text-base font-bold">"What time do you wake up?"</p>
-                            </div>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <!-- DO Section -->
+                    <div class="bg-white border-2 border-blue-200 rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-blue-600 text-white p-3 text-center">
+                            <h3 class="text-2xl font-black tracking-widest">DO</h3>
+                            <p class="text-blue-200 text-sm font-bold uppercase">(Plurals / I / You)</p>
+                        </div>
+                        <div class="p-5">
+                            <ul class="space-y-3 text-lg font-bold text-gray-700 mb-4 pb-4 border-b">
+                                <li class="text-blue-800">Do <span class="text-gray-800">you</span>...?</li>
+                                <li class="text-blue-800">Do <span class="text-gray-800">they</span>...?</li>
+                                <li class="text-blue-800">Do <span class="text-gray-800">your parents</span>...?</li>
+                                <li class="text-blue-800">Do <span class="text-gray-800">David and Sarah</span>...?</li>
+                            </ul>
+                            <p class="italic text-gray-500 text-sm">Example: "What time <span class="text-blue-600 font-bold">do David and Sarah</span> wake up?"</p>
                         </div>
                     </div>
-                    <!-- Afternoon -->
-                    <div class="card-flip h-36" onclick="this.classList.toggle('flipped')">
-                        <div class="card-inner">
-                            <div class="card-front bg-orange-100 flex items-center justify-center rounded-xl border-2 border-orange-300 p-2 text-center shadow-sm">
-                                <p class="text-xl font-bold text-orange-800">Afternoon</p>
-                            </div>
-                            <div class="card-back bg-orange-600 text-white flex items-center justify-center rounded-xl p-2 text-center shadow-inner">
-                                <p class="text-base font-bold">"What do you do in the afternoon?"</p>
-                            </div>
+
+                    <!-- DOES Section -->
+                    <div class="bg-white border-2 border-red-200 rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-red-600 text-white p-3 text-center">
+                            <h3 class="text-2xl font-black tracking-widest">DOES</h3>
+                            <p class="text-red-200 text-sm font-bold uppercase">(Singular / Names)</p>
                         </div>
-                    </div>
-                    <!-- Evening -->
-                    <div class="card-flip h-36" onclick="this.classList.toggle('flipped')">
-                        <div class="card-inner">
-                            <div class="card-front bg-indigo-100 flex items-center justify-center rounded-xl border-2 border-indigo-300 p-2 text-center shadow-sm">
-                                <p class="text-xl font-bold text-indigo-800">Evening</p>
-                            </div>
-                            <div class="card-back bg-indigo-600 text-white flex items-center justify-center rounded-xl p-2 text-center shadow-inner">
-                                <p class="text-base font-bold">"What do you do in the evening?"</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Sleep -->
-                    <div class="card-flip h-36" onclick="this.classList.toggle('flipped')">
-                        <div class="card-inner">
-                            <div class="card-front bg-slate-200 flex items-center justify-center rounded-xl border-2 border-slate-400 p-2 text-center shadow-sm">
-                                <p class="text-xl font-bold text-slate-800">Bedtime</p>
-                            </div>
-                            <div class="card-back bg-slate-800 text-white flex flex-col items-center justify-center rounded-xl p-2 text-center shadow-inner">
-                                <p class="text-base font-bold">"What time do you go to bed?"</p>
-                            </div>
+                        <div class="p-5">
+                            <ul class="space-y-3 text-lg font-bold text-gray-700 mb-4 pb-4 border-b">
+                                <li class="text-red-800">Does <span class="text-gray-800">he</span>...?</li>
+                                <li class="text-red-800">Does <span class="text-gray-800">she</span>...?</li>
+                                <li class="text-red-800">Does <span class="text-gray-800">David</span>...?</li>
+                                <li class="text-red-800">Does <span class="text-gray-800">your boss</span>...?</li>
+                            </ul>
+                            <p class="italic text-gray-500 text-sm">Example: "What time <span class="text-red-600 font-bold">does David</span> wake up?"</p>
                         </div>
                     </div>
                 </div>
 
                 <div class="bg-gray-50 border-t-2 border-dashed border-gray-300 pt-6">
-                    <h3 class="font-bold text-gray-500 mb-4 uppercase tracking-wide text-sm text-center">How to Answer (The Formulas)</h3>
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <div class="bg-white p-4 rounded-lg border-l-4 border-yellow-500 shadow-sm">
-                            <p class="text-xs font-bold text-yellow-600 uppercase tracking-widest mb-2 text-center">Answering Time Questions</p>
-                            <p class="text-xs font-bold text-gray-600 bg-gray-100 p-2 rounded mb-3 text-center tracking-wide">I + [Wake up / Go to bed] + <span class="text-yellow-600">AT</span> + [Time]</p>
-                            <ul class="space-y-2 text-lg font-bold text-gray-800">
-                                <li>1. "I wake up <span class="text-yellow-600 underline">at</span> 6:00 AM."</li>
-                                <li>2. "I go to bed <span class="text-yellow-600 underline">at</span> 11:30 PM."</li>
-                                <li>3. "I eat dinner <span class="text-yellow-600 underline">at</span> 7:00 PM."</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-4 rounded-lg border-l-4 border-orange-500 shadow-sm">
-                            <p class="text-xs font-bold text-orange-600 uppercase tracking-widest mb-2 text-center">Answering Habit Questions</p>
-                            <p class="text-xs font-bold text-gray-600 bg-gray-100 p-2 rounded mb-3 text-center tracking-wide">I + [Habit] + <span class="text-orange-600">IN THE</span> + [Time of Day]</p>
-                            <ul class="space-y-2 text-lg font-bold text-gray-800">
-                                <li>1. "I <span class="text-orange-600 underline">exercise</span> in the morning."</li>
-                                <li>2. "I <span class="text-orange-600 underline">work at the office</span> in the afternoon."</li>
-                                <li>3. "I <span class="text-orange-600 underline">watch Netflix</span> in the evening."</li>
-                            </ul>
-                        </div>
+                    <h3 class="font-bold text-gray-500 mb-4 uppercase tracking-wide text-sm text-center">The Question Formula</h3>
+                    <div class="bg-white p-4 rounded-lg border-l-4 border-slate-500 shadow-sm max-w-2xl mx-auto text-center">
+                        <p class="text-lg font-black text-slate-800 mb-2">What time <span class="text-blue-600">[DO/DOES]</span> + <span class="bg-gray-200 px-2 rounded">[Subject]</span> + wake up?</p>
+                        <p class="text-lg font-black text-slate-800">What <span class="text-blue-600">[DO/DOES]</span> + <span class="bg-gray-200 px-2 rounded">[Subject]</span> + do in the afternoon?</p>
                     </div>
                 </div>
             </div>
@@ -152,53 +125,54 @@
             <div id="phase3" class="phase-section hidden-phase">
                 <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6 shadow-sm">
                     <h2 class="text-3xl font-bold text-red-900 mb-2">Phase 3: The "Monster S" Trap</h2>
-                    <p class="text-red-700 text-lg font-medium">Warning: When you talk about yourself (I), the verb is safe. When you talk about ANYONE ELSE (He/She), the monster attacks the verb.</p>
+                    <p class="text-red-700 text-lg font-medium">Warning: When you answer the question, look at the subject. If the subject is ONE person, the monster attacks the verb.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 gap-6">
-                    <div class="border-2 border-slate-200 rounded-lg p-5 shadow-sm bg-white">
-                        <h3 class="font-bold text-blue-600 mb-4 uppercase tracking-wide border-b pb-2 text-center">Talking About Yourself</h3>
+                    <!-- Safe Zone -->
+                    <div class="border-2 border-blue-200 rounded-lg p-5 shadow-sm bg-blue-50">
+                        <h3 class="font-bold text-blue-800 mb-4 uppercase tracking-wide border-b border-blue-200 pb-2 text-center">SAFE (Plurals & I)</h3>
                         <div class="space-y-4">
-                            <p class="text-2xl font-bold text-gray-800 text-center">I wake up.</p>
-                            <p class="text-2xl font-bold text-gray-800 text-center">I exercise.</p>
-                            <p class="text-2xl font-bold text-gray-800 text-center">I watch TV.</p>
+                            <p class="text-xl font-bold text-gray-800 text-center"><span class="text-blue-600">I</span> wake up.</p>
+                            <p class="text-xl font-bold text-gray-800 text-center"><span class="text-blue-600">My parents</span> exercise.</p>
+                            <p class="text-xl font-bold text-gray-800 text-center"><span class="text-blue-600">David and Sarah</span> watch TV.</p>
                         </div>
                     </div>
 
-                    <div class="border-2 border-slate-200 rounded-lg p-5 shadow-sm bg-red-50 relative overflow-hidden">
-                        <!-- Visual flair for the monster -->
+                    <!-- Danger Zone -->
+                    <div class="border-2 border-red-200 rounded-lg p-5 shadow-sm bg-red-50 relative overflow-hidden">
                         <div class="absolute -right-4 -top-4 text-6xl opacity-10">👾</div>
                         
-                        <h3 class="font-bold text-red-600 mb-4 uppercase tracking-wide border-b pb-2 text-center border-red-200">Talking About Your Partner</h3>
+                        <h3 class="font-bold text-red-800 mb-4 uppercase tracking-wide border-b border-red-200 pb-2 text-center">DANGER (Singular Names)</h3>
                         <div class="space-y-4">
-                            <p class="text-2xl font-bold text-gray-800 text-center">He wake<span class="text-red-600 font-extrabold text-3xl">s</span> up.</p>
-                            <p class="text-2xl font-bold text-gray-800 text-center">She exercise<span class="text-red-600 font-extrabold text-3xl">s</span>.</p>
-                            <p class="text-2xl font-bold text-gray-800 text-center">He watch<span class="text-red-600 font-extrabold text-3xl">es</span> TV.</p>
+                            <p class="text-xl font-bold text-gray-800 text-center"><span class="text-red-600">David</span> wake<span class="text-red-600 font-extrabold text-3xl">s</span> up.</p>
+                            <p class="text-xl font-bold text-gray-800 text-center"><span class="text-red-600">My boss</span> exercise<span class="text-red-600 font-extrabold text-3xl">s</span>.</p>
+                            <p class="text-xl font-bold text-gray-800 text-center"><span class="text-red-600">Sarah</span> watch<span class="text-red-600 font-extrabold text-3xl">es</span> TV.</p>
                         </div>
-                        <p class="text-center text-xs text-red-800 mt-4 uppercase font-bold tracking-widest">Do not drop the S!</p>
+                        <p class="text-center text-xs text-red-800 mt-4 uppercase font-black tracking-widest">Do not drop the S!</p>
                     </div>
                 </div>
             </div>
 
             <!-- PHASE 4: Dynamic Secret Profile Generator -->
             <div id="phase4" class="phase-section hidden-phase text-center">
-                <h2 class="text-3xl font-bold text-orange-900 mb-2">Phase 4: Your Secret Lifestyle</h2>
-                <p class="text-gray-600 mb-4 text-lg">Goal: Stop using your real life. Generate a fake profile to play the game.</p>
+                <h2 class="text-3xl font-bold text-orange-900 mb-2">Phase 4: Your Target Profile</h2>
+                <p class="text-gray-600 mb-4 text-lg">Goal: Stop using your real life. Generate a fake Target Profile.</p>
                 
                 <div class="mb-6 bg-orange-50 border-l-4 border-orange-500 p-4 rounded shadow-sm text-left max-w-md mx-auto">
                     <h3 class="font-bold text-orange-800 uppercase tracking-wide mb-2 text-sm">Action Plan:</h3>
                     <div class="space-y-3 text-orange-900 font-medium text-sm">
-                        <p><strong>Part 1: The Persona (Sitting)</strong><br>Generate your lifestyle data below. Keep it secret!</p>
-                        <p><strong>Part 2: The Roommate Hunt (Stand up!)</strong><br>Go to Phase 5. Find a partner. You are looking for a roommate. Interrogate them to see if your habits match.</p>
+                        <p><strong>Part 1: The Persona (Sitting)</strong><br>Click the button below to get your Target's lifestyle. Keep it secret!</p>
+                        <p><strong>Part 2: The Neighborhood Gossip (Stand up!)</strong><br>Go to Phase 5. Find a partner. You must interrogate them to find out who their target is and what they do.</p>
                     </div>
                 </div>
 
                 <div id="routine-card" class="bg-yellow-50 border-4 border-dashed border-yellow-400 p-6 rounded-2xl max-w-md mx-auto mb-6 shadow-inner min-h-[300px] flex flex-col justify-center text-gray-800">
-                    <p class="text-gray-400 italic">Click the button below to generate your lifestyle...</p>
+                    <p class="text-gray-400 italic">Click the button below to generate your Target...</p>
                 </div>
 
                 <button onclick="generateRoutine()" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transform transition hover:scale-105 mb-6">
-                    👤 Generate Profile
+                    🎯 Generate Target Profile
                 </button>
 
                 <!-- Custom Data Upload -->
@@ -210,18 +184,21 @@
                 </div>
             </div>
 
-            <!-- PHASE 5: The Mixer (Roommate Hunt) -->
+            <!-- PHASE 5: The Gossip Mixer -->
             <div id="phase5" class="phase-section hidden-phase">
-                <h2 class="text-3xl font-bold text-orange-900 mb-2 text-center">Phase 5: The Roommate Hunt</h2>
-                <p class="text-gray-600 mb-4 text-lg font-bold text-orange-600 text-center">Goal: Stand up! Ask questions and write down your partner's secrets.</p>
+                <h2 class="text-3xl font-bold text-orange-900 mb-2 text-center">Phase 5: The Neighborhood Gossip</h2>
+                <p class="text-gray-600 mb-4 text-lg font-bold text-orange-600 text-center">Goal: Stand up! Interrogate your partner. Be careful with DO and DOES!</p>
                 
                 <div class="mb-6 bg-slate-800 rounded-lg p-4 shadow-sm text-white">
                     <p class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-3 border-b border-slate-600 pb-1">Interrogation Guide (Ask your partner):</p>
-                    <div class="grid grid-cols-2 gap-4 text-sm font-bold text-slate-200">
-                        <p>1. "What time do you wake up?"</p>
-                        <p>2. "What do you do in the afternoon?"</p>
-                        <p>3. "What do you do in the evening?"</p>
-                        <p>4. "What time do you go to bed?"</p>
+                    <div class="grid gap-3 text-sm font-bold text-slate-200 bg-slate-900 p-3 rounded">
+                        <p class="text-yellow-400 text-base">Step 1: "Who is your target?"</p>
+                        <p class="italic text-gray-400">Wait for them to answer (e.g., "David"). Then plug the name into Step 2.</p>
+                        <hr class="border-slate-700">
+                        <p>Step 2: "What time <span class="text-red-400">[DO/DOES]</span> [Subject] wake up?"</p>
+                        <p>Step 3: "What <span class="text-red-400">[DO/DOES]</span> [Subject] do in the afternoon?"</p>
+                        <p>Step 4: "What <span class="text-red-400">[DO/DOES]</span> [Subject] do in the evening?"</p>
+                        <p>Step 5: "What time <span class="text-red-400">[DO/DOES]</span> [Subject] go to bed?"</p>
                     </div>
                 </div>
 
@@ -229,7 +206,7 @@
                     <table class="w-full text-left border-collapse">
                         <thead>
                             <tr class="bg-orange-800 text-white font-bold uppercase text-[10px] sm:text-xs tracking-wider">
-                                <th class="p-2 w-1/5">Name</th>
+                                <th class="p-2 w-1/5">Who? (Target)</th>
                                 <th class="p-2 border-l border-orange-700 w-1/5">Wake Up</th>
                                 <th class="p-2 border-l border-orange-700 w-1/5 text-center">Afternoon</th>
                                 <th class="p-2 border-l border-orange-700 w-1/5 text-center">Evening</th>
@@ -238,21 +215,21 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td class="p-2 border-b border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Name"></td>
+                                <td class="p-2 border-b border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-red-700" placeholder="Target Name"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Time"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Habit"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Habit"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Time"></td>
                             </tr>
                             <tr class="bg-gray-50">
-                                <td class="p-2 border-b border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Name"></td>
+                                <td class="p-2 border-b border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-red-700" placeholder="Target Name"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Time"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Habit"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Habit"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Time"></td>
                             </tr>
                             <tr>
-                                <td class="p-2 border-b border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Name"></td>
+                                <td class="p-2 border-b border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-red-700" placeholder="Target Name"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Time"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Habit"></td>
                                 <td class="p-2 border-b border-l border-gray-300"><input type="text" class="w-full bg-transparent outline-none font-bold text-orange-700" placeholder="Habit"></td>
@@ -263,36 +240,37 @@
                 </div>
             </div>
 
-            <!-- PHASE 6: The Report (FIXED UI) -->
+            <!-- PHASE 6: The Report -->
             <div id="phase6" class="phase-section hidden-phase">
                 <div class="bg-purple-100 border-l-4 border-purple-500 p-4 mb-6 shadow-sm">
-                    <h2 class="text-3xl font-bold text-purple-900 mb-2">Phase 6: The Gossip Report</h2>
-                    <p class="text-purple-800 text-lg font-medium">Goal: Look at your Phase 5 notes. Tell the class about someone you interviewed.</p>
+                    <h2 class="text-3xl font-bold text-purple-900 mb-2">Phase 6: The Final Report</h2>
+                    <p class="text-purple-800 text-lg font-medium">Goal: Look at your notes. Tell the class about someone's target. Defeat the Monster 'S'!</p>
                 </div>
 
                 <div class="bg-white border-2 border-slate-800 rounded-lg p-6 shadow-md max-w-lg mx-auto">
-                    <h3 class="font-bold text-slate-500 mb-4 uppercase tracking-wide border-b border-slate-200 pb-2 text-center text-sm">Sentence Frame</h3>
+                    <h3 class="font-bold text-slate-500 mb-4 uppercase tracking-wide border-b border-slate-200 pb-2 text-center text-sm">Report Framework</h3>
                     
                     <div class="space-y-6 text-xl font-medium text-gray-800 leading-relaxed text-left">
                         <p>
-                            "I talked to <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded shadow-inner border border-purple-300 font-bold">[Name]</span>."
+                            "I talked to <span class="bg-gray-100 text-gray-600 px-3 py-1 rounded shadow-inner border font-bold">[Partner Name]</span>."
                         </p>
                         <p>
-                            "He/She wake<span class="text-red-600 font-extrabold text-2xl animate-pulse">s</span> up at <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded shadow-inner border border-purple-300 font-bold">[Time]</span>."
+                            "Their target is <span class="bg-red-100 text-red-800 px-3 py-1 rounded shadow-inner border border-red-300 font-bold">[Subject]</span>."
                         </p>
                         <p>
-                            "In the afternoon, he/she <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded border-2 border-dashed border-red-400 font-bold">[Habit <span class="text-red-600">+S</span>]</span>."
+                            "<span class="bg-red-100 text-red-800 px-2 rounded font-bold">[Subject]</span> wake<span class="text-red-600 font-extrabold text-2xl animate-pulse bg-yellow-100 px-1 rounded">(s)</span> up at <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded border border-purple-300 font-bold">[Time]</span>."
                         </p>
                         <p>
-                            "In the evening, he/she <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded border-2 border-dashed border-red-400 font-bold">[Habit <span class="text-red-600">+S</span>]</span>."
+                            "In the afternoon, they <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded border-2 border-dashed border-red-400 font-bold">[Habit <span class="text-red-600">+(s)</span>]</span>."
                         </p>
                         <p>
-                            "He/She go<span class="text-red-600 font-extrabold text-2xl animate-pulse">es</span> to bed at <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded shadow-inner border border-purple-300 font-bold">[Time]</span>."
+                            "In the evening, they <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded border-2 border-dashed border-red-400 font-bold">[Habit <span class="text-red-600">+(s)</span>]</span>."
                         </p>
                     </div>
                     
-                    <div class="mt-6 p-3 bg-red-50 border-l-4 border-red-500 text-sm font-bold text-red-800 text-center">
-                        🚨 Warning: Apply the Monster 'S' to the habits!
+                    <div class="mt-6 p-4 bg-red-50 border-l-4 border-red-600 shadow-sm">
+                        <p class="text-sm font-bold text-red-800 uppercase tracking-widest text-center">🚨 The Final Test</p>
+                        <p class="text-center text-gray-700 font-medium text-sm mt-1">Look at the Subject. Is it singular or plural? YOU must decide if the 'S' attacks the verb!</p>
                     </div>
                 </div>
             </div>
@@ -338,6 +316,14 @@
             else { activeBtn.classList.replace('bg-orange-700', 'bg-orange-600'); activeBtn.classList.replace('bg-orange-600', 'bg-orange-500'); }
         }
 
+        // MASSIVE EXPANSION: Subjects triggering DO vs DOES
+        const gossipSubjects = [
+            "I", "My sister", "My parents", "John and I", "My boss",
+            "David", "Sarah", "David and Sarah", "My friends", "The teacher",
+            "Mr. Smith", "My grandparents", "Emma", "Mark", "The students",
+            "My brother", "My dog"
+        ];
+
         const wakeTimes = ["5:00 AM", "6:30 AM", "7:45 AM", "9:00 AM", "11:30 AM", "1:00 PM"];
         const afternoonHabits = ["work at the office", "study at the library", "take a nap", "meet friends", "watch Netflix", "go shopping"];
         const eveningHabits = ["cook dinner", "go to a club", "do homework", "clean the apartment", "play video games", "call family"];
@@ -358,6 +344,7 @@
                 let loadedCount = 0;
                 lines.forEach(line => {
                     const parts = line.split(',').map(item => item.trim());
+                    // For custom loader, we will use the first part as the "Profile Persona" but still assign a random Target Subject.
                     if (parts.length >= 5 && parts[0] !== "") {
                         customRoutines.push({
                             name: parts[0],
@@ -378,13 +365,16 @@
         }
 
         function generateRoutine() {
-            let wake, afternoon, evening, sleep, name;
+            let wake, afternoon, evening, sleep, persona;
+            
+            // Generate a random subject (David, My parents, I, etc.)
+            const subject = gossipSubjects[Math.floor(Math.random() * gossipSubjects.length)];
 
             if (customRoutines.length > 0) {
                 const r = customRoutines[Math.floor(Math.random() * customRoutines.length)];
-                name = r.name; wake = r.wake; afternoon = r.afternoon; evening = r.evening; sleep = r.sleep;
+                persona = r.name; wake = r.wake; afternoon = r.afternoon; evening = r.evening; sleep = r.sleep;
             } else {
-                name = "Unknown Profile";
+                persona = "Random Profile";
                 wake = wakeTimes[Math.floor(Math.random() * wakeTimes.length)];
                 afternoon = afternoonHabits[Math.floor(Math.random() * afternoonHabits.length)];
                 evening = eveningHabits[Math.floor(Math.random() * eveningHabits.length)];
@@ -393,8 +383,13 @@
 
             const cardHtml = `
                 <div class="text-left w-full px-4">
-                    <p class="text-sm font-bold text-gray-400 uppercase tracking-widest border-b border-gray-300 pb-1 mb-4 text-center">Classified Lifestyle Profile</p>
+                    <p class="text-sm font-bold text-gray-400 uppercase tracking-widest border-b border-gray-300 pb-1 mb-4 text-center">Classified Target Data</p>
                     
+                    <div class="flex flex-col items-center justify-center bg-red-100 p-4 rounded-xl shadow-md border-2 border-red-400 mb-6">
+                        <span class="text-xs font-bold text-red-800 uppercase tracking-widest mb-1">Your Target Subject:</span>
+                        <span class="text-3xl font-black text-red-900">${subject}</span>
+                    </div>
+
                     <div class="space-y-4">
                         <div class="flex items-center gap-3 bg-white p-3 rounded shadow-sm border-l-4 border-yellow-400">
                             <span class="text-2xl">🌅</span>
@@ -418,8 +413,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-4 p-3 bg-red-50 border-l-4 border-red-500 text-sm font-bold text-red-800 shadow-sm text-center">
-                    ⚠️ Answer the questions with: <span class="underline">"I [habit] at [time]."</span>
+                <div class="mt-6 p-3 bg-blue-50 border-l-4 border-blue-500 text-sm font-medium text-blue-900 shadow-sm text-left">
+                    <p class="font-bold uppercase text-xs mb-1">When your partner asks:</p>
+                    <p>Tell them your target is <span class="font-bold">"${subject}"</span>.</p>
+                    <p class="mt-2">Answer their questions using the data above. <br><span class="italic text-gray-500">(e.g., "${subject} wakes up at ${wake}...")</span></p>
                 </div>
             `;
             document.getElementById('routine-card').innerHTML = cardHtml;
